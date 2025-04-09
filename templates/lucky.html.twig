@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Lucky{% endblock %}
+
+{% block body %}
+<h1 class="mb-4">Lucky</h1>
+<hr class="my-4">
+
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <div class="p-4 border rounded bg-light text-center">
+      <h4>Slumpmässigt nummer:</h4>
+      <p class="display-4">{{ number }}</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="p-4 border rounded bg-success text-center">
+      {% if number == 1 %}
+        <img src="{{ asset('img/lucky/quote1.jpg') }}" alt="Citat 1" class="img-fluid rounded">
+      {% elseif number == 2 %}
+        <img src="{{ asset('img/lucky/quote2.jpg') }}" alt="Citat 1" class="img-fluid rounded">
+      {% elseif number == 3 %}
+        <img src="{{ asset('img/lucky/quote3.jpg') }}" alt="Citat 1" class="img-fluid rounded">
+      {% elseif number == 4 %}
+        <img src="{{ asset('img/lucky/quote4.jpg') }}" alt="Citat 1" class="img-fluid rounded">
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

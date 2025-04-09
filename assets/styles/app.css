@@ -1,13 +1,9 @@
 body {
-    background-color: skyblue;
-    background: url('../images/background.jpg');
+    /* background-color: skyblue; */
+    /* background: url('../images/background.jpg'); */
     background-size: cover;
     margin: 0 auto;
-    max-width: 1200px;
-}
-
-h1 {
-    border-bottom: 4px double #ccc;
+    max-width: 100%;
 }
 
 header {
@@ -17,3 +13,17 @@ header {
     padding-top: 50px;
     text-align: center;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }

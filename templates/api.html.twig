@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Om{% endblock %}
+
+{% block body %}
+    <h1>API:er</h1>
+    <hr class="my-4">
+
+    <table class="table table-bordered table-striped mt-4">
+        <thead class="table-dark">
+          <tr>
+            <th>API-route</th>
+            <th>Beskrivning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="{{ path('api_quote') }}">/api/quote</a></td>
+            <td>Returnerar ett JSON-objekt med ett slumpmässigt citat, dagens datum och en tidsstämpel.</td>
+          </tr>
+        </tbody>
+      </table>
+      {% endblock %}
